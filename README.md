@@ -17,12 +17,7 @@ Installation
 ------------
 
 ```bash
-# Debian family
-apt-get update && apt-get -y install python-pip
-pip install boto
-pip install python-magic
-wget -o /usr/bin/s3-parallel-put https://raw.githubusercontent.com/mishudark/s3-parallel-put/master/s3-parallel-put
-chmod +x /usr/bin/s3-parallel-put
+python -m pip install s3-parallel-put
 ```
 
 Usage
