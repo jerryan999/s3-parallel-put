@@ -342,7 +342,9 @@ def statter(stat_queue, start, options):
     logger.info('put %d bytes in %d files in %.1f seconds (%d bytes/s, %.1f files/s)' % (total_size, count, duration, total_size / duration, count / duration))
 
 
-def main(argv):
+def main(argv=None):
+    if argv is None:
+        argv = sys.argv
     parser = OptionParser()
     group = OptionGroup(parser, 'S3 options')
     group.add_option('--bucket', metavar='BUCKET',
